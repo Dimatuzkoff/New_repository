@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #wtime:hover{
+      background-color: blue;
+    }
+    #drugBlock{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #drugBlock1{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      position: absolute;
+      top: 150px;
+      left: 110px;
+    }
+    #drugBlock2{
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      position: absolute;
+      top: 300px;
+      left: 600px;
+    }
+    #drugBlock3{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top: 300px;
+      left: 300px;
+    }
+    #drugBlock4{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      top: 360px;
+      left: 700px;
+    }
+    </style>
+  </head>
+  <body onmousemove="moveElement(event)">
+<div id="drugBlock" name="blue" onmouseup="leftElement()" onmousedown="getElement(this)"></div>
+<div id="drugBlock1" name="pink" onmouseup="leftElement()" onmousedown="getElement(this)"></div>
+<div id="drugBlock2" name="yellow" onmouseup="leftElement()" onmousedown="getElement(this)"></div>
+<div id="drugBlock3" name="red" onmouseup="leftElement()" onmousedown="getElement(this)"></div>
+<div id="drugBlock4" name="green" onmouseup="leftElement()" onmousedown="getElement(this)"></div>
+<span id="myspan">Hello!!!!!!</span>
+<button type="button" id="b1" onclick="document.getElementById('myspan').innerHTML = 'Bye!!!!!!!!'"> Click me!!</button>
+<button type="button" onclick = "look()" >LOOK!!!</button>
+<button id="b4" type="button" onclick="getElementById('myspan').style.display = 'none'; document.getElementById('im').style.display = 'none'; document.getElementById('b1').style.display = 'none'; document.getElementById('b2').style.display = 'none'; document.getElementById('b3').style.display = 'none'; document.getElementById('b4').style.display = 'none'  "> CLEAR</button>
+<br>
+<button style="display:none" id="b2" type="button" onclick="document.getElementById('im').src='3.jpeg'">first foto</button>
+<img style="display:none" id="im" src="3.jpeg" width="200px">
+<button style="display:none" id="b3" type="button" onclick="document.getElementById('im').src='5.jpeg'">second foto</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<button onclick = "document.write(5+7)">rrrrrrrrrr</button>
+<button onclick = "print()">Print this page</button>
+<p id="ftime"></p>
+<button id="wtime" type="button"> THE TIME IS</button>
+<p id="car"></p>
+<div class="out"></div>
+
+    <script src="w3s.js"></script>
+  </body>
+</html>
